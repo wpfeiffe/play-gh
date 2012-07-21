@@ -2,7 +2,7 @@ import groovyx.javafx.GroovyFX
 import groovyx.javafx.SceneGraphBuilder
 
 //
-// Program starts here - This app is super awesome
+// Program starts here - This app is super awesome from lenovo
 //
 GroovyFX.start {
     def sg = new SceneGraphBuilder()
