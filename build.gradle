@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+version = '1.1'
+projectName = 'HelloGroovyFX'
+group = 'com.bpcs.groovyfx'
+
+//javafxHome = System.env['JAVAFX_HOME']
+javafxHome = '/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    groovy group: 'org.codehaus.groovy', name: 'groovy-all', version: '1.8.6'
+    compile group: 'org.codehaus.groovyfx', name: 'groovyfx', version: '0.2'
+    compile files("${javafxHome}/jre/lib/jfxrt.jar")
+    testCompile group: 'junit', name: 'junit', version: '4.8.2'
+}
